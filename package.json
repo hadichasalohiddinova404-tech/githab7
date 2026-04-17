@@ -1,0 +1,21 @@
+{
+  "name": "hadicha",
+  "version": "1.0.0",
+  "description": "Blockchain-inspired diploma and certificate verification platform",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "education",
+    "blockchain",
+    "diploma",
+    "verification"
+  ],
+  "author": "hadicha",
+  "license": "MIT"
+}
