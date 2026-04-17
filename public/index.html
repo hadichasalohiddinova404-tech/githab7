@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Husanboy</title>
+    <meta
+      name="description"
+      content="Blockchain asosidagi diplom va sertifikatlarni yaratish, tekshirish va ulashish uchun yagona ta'lim tizimi."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <div class="brand-mark">EC</div>
+            <div>
+              <p class="eyebrow">Decentralized Academic Trust</p>
+              <h1>Husanboy</h1>
+            </div>
+          </div>
+          <a class="ghost-link" href="#create">Credential yaratish</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Diplom, sertifikat va kurs natijalari uchun yagona reyestr</p>
+            <h2>
+              Talabalar ma'lumotlarini blockchain ruhidagi ledger bilan yarating, tekshiring va xavfsiz ulashing.
+            </h2>
+            <p class="hero-text">
+              Platforma universitet, o'quv markazi va ish beruvchilar uchun bitta panelda credential yaratish,
+              haqiqiyligini tekshirish va ulashish oqimini beradi.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#registry">Registry ko'rish</a>
+              <a class="button secondary" href="#verify">Haqiqiyligini tekshirish</a>
+            </div>
+          </section>
+
+          <aside class="hero-panel">
+            <div class="panel-card glass">
+              <p class="panel-label">Tizim holati</p>
+              <div id="hero-stats" class="hero-stats"></div>
+            </div>
+            <div class="panel-card signal-card">
+              <p class="panel-label">Ishlash oqimi</p>
+              <ol class="flow-list">
+                <li>Universitet diplom yoki sertifikat yaratadi</li>
+                <li>Hash va block yozuvi ledgerga biriktiriladi</li>
+                <li>Talaba credentialni ulashadi</li>
+                <li>Ish beruvchi yoki universitet darhol verify qiladi</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="shareSpotlight" class="share-spotlight hidden"></section>
+
+        <section class="stats-section">
+          <div class="section-heading">
+            <p class="eyebrow">Live dashboard</p>
+            <h3>Tizim bo'ylab umumiy ko'rsatkichlar</h3>
+          </div>
+          <div id="stats-grid" class="stats-grid"></div>
+        </section>
+
+        <section class="workspace-grid">
+          <article id="create" class="card form-card">
+            <div class="section-heading">
+              <p class="eyebrow">Issue credential</p>
+              <h3>Yangi diplom yoki sertifikat yaratish</h3>
+            </div>
+            <form id="credential-form" class="app-form">
+              <div class="form-grid">
+                <label>
+                  <span>Talaba F.I.SH</span>
+                  <input name="fullName" placeholder="Masalan, Nodira Askarova" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="student@edu.uz" required />
+                </label>
+                <label>
+                  <span>Wallet address</span>
+                  <input name="walletAddress" placeholder="0x..." required />
+                </label>
+                <label>
+                  <span>Universitet yoki platforma</span>
+                  <input name="university" placeholder="Tashkent Digital University" required />
+                </label>
+                <label>
+                  <span>Fakultet / bo'lim</span>
+                  <input name="department" placeholder="Computer Science" required />
+                </label>
+                <label>
+                  <span>Credential turi</span>
+                  <select name="type" required>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Certificate">Certificate</option>
+                    <option value="CourseResult">CourseResult</option>
+                  </select>
+                </label>
+                <label class="wide">
+                  <span>Nomi</span>
+                  <input name="title" placeholder="Bachelor Diploma in Software Engineering" required />
+                </label>
+                <label>
+                  <span>Mutaxassislik</span>
+                  <input name="specialization" placeholder="AI and Data Systems" />
+                </label>
+                <label>
+                  <span>Baho / natija</span>
+                  <input name="grade" placeholder="95/100 yoki Excellent" />
+                </label>
+                <label>
+                  <span>Soat</span>
+                  <input name="courseHours" placeholder="48" />
+                </label>
+                <label>
+                  <span>Cohort</span>
+                  <input name="cohort" placeholder="2022-2026" />
+                </label>
+                <label>
+                  <span>Issuer wallet</span>
+                  <input name="issuerWallet" placeholder="0xUniversityDemoWallet" />
+                </label>
+                <label class="wide">
+                  <span>Tavsif</span>
+                  <textarea name="description" rows="4" placeholder="Credential haqida qisqacha ma'lumot"></textarea>
+                </label>
+              </div>
+              <button class="button primary" type="submit">Blockchain credential yaratish</button>
+            </form>
+          </article>
+
+          <article id="verify" class="card verify-card">
+            <div class="section-heading">
+              <p class="eyebrow">Verification</p>
+              <h3>Diplom yoki sertifikatni tekshirish</h3>
+            </div>
+            <form id="verify-form" class="inline-form">
+              <input id="verify-input" name="recordId" placeholder="REC-..." required />
+              <button class="button secondary" type="submit">Verify</button>
+            </form>
+            <div id="verify-result" class="verify-result empty-state">
+              `recordId` kiriting va credential hash/ledger holatini tekshiring.
+            </div>
+          </article>
+        </section>
+
+        <section id="registry" class="card registry-card">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow">Unified registry</p>
+              <h3>Barcha diplom va sertifikatlar ro'yxati</h3>
+            </div>
+            <div class="toolbar">
+              <input id="search-input" placeholder="Talaba, nom, institution..." />
+              <select id="type-filter">
+                <option value="">Barcha turlar</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Certificate">Certificate</option>
+                <option value="CourseResult">CourseResult</option>
+              </select>
+            </div>
+          </div>
+          <div id="registry-list" class="registry-list"></div>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="card">
+            <div class="section-heading">
+              <p class="eyebrow">Students</p>
+              <h3>Talaba profillari</h3>
+            </div>
+            <div id="students-list" class="students-list"></div>
+          </article>
+
+          <article class="card">
+            <div class="section-heading">
+              <p class="eyebrow">Ledger</p>
+              <h3>So'nggi blockchain yozuvlari</h3>
+            </div>
+            <div id="ledger-list" class="ledger-list"></div>
+          </article>
+        </section>
+
+        <section class="card info-card">
+          <div class="section-heading">
+            <p class="eyebrow">Smart contract</p>
+            <h3>On-chain kengaytirish uchun tayyor yo'nalish</h3>
+          </div>
+          <div class="pill-row">
+            <span class="pill">Solidity contract mavjud</span>
+            <span class="pill">Hash verification tayyor</span>
+            <span class="pill">Share-by-consent oqimi bor</span>
+            <span class="pill">Render/Railway deployga mos</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
