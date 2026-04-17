@@ -1,0 +1,210 @@
+{
+  "students": [
+    {
+      "studentId": "STD-4c8dd169",
+      "fullName": "Aziza Karimova",
+      "email": "aziza@example.edu",
+      "walletAddress": "0xA91zaKariM0va",
+      "university": "Tashkent Digital University",
+      "department": "Software Engineering",
+      "createdAt": "2026-04-15T13:13:19.705Z"
+    },
+    {
+      "studentId": "STD-a267e287",
+      "fullName": "Bekzod Rustamov",
+      "email": "bekzod@example.edu",
+      "walletAddress": "0xB3kzodRu5tam0v",
+      "university": "Open Skills Academy",
+      "department": "Online Learning",
+      "createdAt": "2026-04-15T13:13:19.706Z"
+    },
+    {
+      "studentId": "STD-0940308e",
+      "fullName": "Madina Xolmurodova",
+      "email": "madina@example.edu",
+      "walletAddress": "0xMad1naX0lmur0d0va",
+      "university": "Husanboy Courses",
+      "department": "Online Learning",
+      "createdAt": "2026-04-15T13:13:19.706Z"
+    },
+    {
+      "studentId": "STD-506a1547",
+      "fullName": "Jasur Turgunov",
+      "email": "jasur@example.edu",
+      "walletAddress": "0xJasurTurGUN0v",
+      "university": "Samarkand Innovation University",
+      "department": "Cybersecurity",
+      "createdAt": "2026-04-15T13:13:19.706Z"
+    }
+  ],
+  "records": [
+    {
+      "recordId": "REC-9d59a0de",
+      "type": "Diploma",
+      "studentId": "STD-4c8dd169",
+      "studentName": "Aziza Karimova",
+      "institutionName": "Tashkent Digital University",
+      "title": "Bachelor Diploma in Computer Science",
+      "specialization": "AI and Data Systems",
+      "grade": "3.9 GPA",
+      "courseHours": "",
+      "cohort": "2022-2026",
+      "description": "Four-year bachelor degree verified on Husanboy.",
+      "metadataVisibility": "shared-by-consent",
+      "metadataUri": "ipfs://demo/META-035ee1ed",
+      "issuerWallet": "0xUniversityDemoWallet",
+      "ownerWallet": "0xA91zaKariM0va",
+      "issuedAt": "2026-04-15T13:13:19.705Z",
+      "status": "active",
+      "credentialHash": "a8221685e3d2d4f8e09f25352bef80ffd20bae086275bcd4bdeadf44015d8553",
+      "block": {
+        "index": 0,
+        "recordId": "REC-9d59a0de",
+        "credentialHash": "a8221685e3d2d4f8e09f25352bef80ffd20bae086275bcd4bdeadf44015d8553",
+        "issuedAt": "2026-04-15T13:13:19.705Z",
+        "previousHash": "GENESIS",
+        "blockHash": "4516e2bba3e3d3bcca5939f5659ad2d2f8975b2d457e6dbd67890af5e3da6d93"
+      }
+    },
+    {
+      "recordId": "REC-54e55dd7",
+      "type": "Certificate",
+      "studentId": "STD-a267e287",
+      "studentName": "Bekzod Rustamov",
+      "institutionName": "Open Skills Academy",
+      "title": "Blockchain Fundamentals Certificate",
+      "specialization": "",
+      "grade": "95/100",
+      "courseHours": "48",
+      "cohort": "Spring 2026",
+      "description": "Professional certificate for blockchain system design.",
+      "metadataVisibility": "shared-by-consent",
+      "metadataUri": "ipfs://demo/META-895f758f",
+      "issuerWallet": "0xUniversityDemoWallet",
+      "ownerWallet": "0xB3kzodRu5tam0v",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "status": "active",
+      "credentialHash": "1cb75be6db6681db2f44b16e60b96ffb143db0ba6f278b63f7426abfebd12880",
+      "block": {
+        "index": 1,
+        "recordId": "REC-54e55dd7",
+        "credentialHash": "1cb75be6db6681db2f44b16e60b96ffb143db0ba6f278b63f7426abfebd12880",
+        "issuedAt": "2026-04-15T13:13:19.706Z",
+        "previousHash": "4516e2bba3e3d3bcca5939f5659ad2d2f8975b2d457e6dbd67890af5e3da6d93",
+        "blockHash": "bdfc992b12c9026c1825b8a41be69dc045ecde74db0c3d3f6ed0e5b4a44fbfe1"
+      }
+    },
+    {
+      "recordId": "REC-63e8c053",
+      "type": "CourseResult",
+      "studentId": "STD-0940308e",
+      "studentName": "Madina Xolmurodova",
+      "institutionName": "Husanboy Courses",
+      "title": "Smart Contract Security Bootcamp",
+      "specialization": "",
+      "grade": "Completed with distinction",
+      "courseHours": "72",
+      "cohort": "Cohort 8",
+      "description": "Online course result permanently anchored in the chain.",
+      "metadataVisibility": "shared-by-consent",
+      "metadataUri": "ipfs://demo/META-81d0cdd9",
+      "issuerWallet": "0xUniversityDemoWallet",
+      "ownerWallet": "0xMad1naX0lmur0d0va",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "status": "active",
+      "credentialHash": "08dc2ac6ad5db15b1350ea96a129c0600b818c2e041bb3977353415d6a35c27b",
+      "block": {
+        "index": 2,
+        "recordId": "REC-63e8c053",
+        "credentialHash": "08dc2ac6ad5db15b1350ea96a129c0600b818c2e041bb3977353415d6a35c27b",
+        "issuedAt": "2026-04-15T13:13:19.706Z",
+        "previousHash": "bdfc992b12c9026c1825b8a41be69dc045ecde74db0c3d3f6ed0e5b4a44fbfe1",
+        "blockHash": "83ea98e33663edccbfd3ea00e805c3cf8baf89da2c403d3f085a308f83d55711"
+      }
+    },
+    {
+      "recordId": "REC-8c910f11",
+      "type": "Diploma",
+      "studentId": "STD-506a1547",
+      "studentName": "Jasur Turgunov",
+      "institutionName": "Samarkand Innovation University",
+      "title": "Master Diploma in Information Security",
+      "specialization": "Digital Trust and Compliance",
+      "grade": "Excellent",
+      "courseHours": "",
+      "cohort": "2024-2026",
+      "description": "Graduate diploma anchored for employer verification.",
+      "metadataVisibility": "shared-by-consent",
+      "metadataUri": "ipfs://demo/META-f4899ad0",
+      "issuerWallet": "0xUniversityDemoWallet",
+      "ownerWallet": "0xJasurTurGUN0v",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "status": "active",
+      "credentialHash": "5aaf9031182f84b8e2e9fa26a859df49f906b545521927e06ae8e7069ac2ca30",
+      "block": {
+        "index": 3,
+        "recordId": "REC-8c910f11",
+        "credentialHash": "5aaf9031182f84b8e2e9fa26a859df49f906b545521927e06ae8e7069ac2ca30",
+        "issuedAt": "2026-04-15T13:13:19.706Z",
+        "previousHash": "83ea98e33663edccbfd3ea00e805c3cf8baf89da2c403d3f085a308f83d55711",
+        "blockHash": "ebe5f7b54d225bd89964a269f248795393974e00f3b6fc51bae8aab5515d8f37"
+      }
+    }
+  ],
+  "shares": [
+    {
+      "shareToken": "2cf83c902884991887e892d6",
+      "recordId": "REC-9d59a0de",
+      "studentId": "STD-4c8dd169",
+      "recipientName": "Global HR Group",
+      "recipientType": "Employer",
+      "note": "Employment verification access",
+      "createdAt": "2026-04-15T13:13:19.706Z",
+      "expiresAt": null
+    },
+    {
+      "shareToken": "cbf905671dff40a47f15d486",
+      "recordId": "REC-54e55dd7",
+      "studentId": "STD-a267e287",
+      "recipientName": "Westminster Partner University",
+      "recipientType": "University",
+      "note": "Transfer admissions review",
+      "createdAt": "2026-04-15T13:13:19.706Z",
+      "expiresAt": null
+    }
+  ],
+  "chain": [
+    {
+      "index": 0,
+      "recordId": "REC-9d59a0de",
+      "credentialHash": "a8221685e3d2d4f8e09f25352bef80ffd20bae086275bcd4bdeadf44015d8553",
+      "issuedAt": "2026-04-15T13:13:19.705Z",
+      "previousHash": "GENESIS",
+      "blockHash": "4516e2bba3e3d3bcca5939f5659ad2d2f8975b2d457e6dbd67890af5e3da6d93"
+    },
+    {
+      "index": 1,
+      "recordId": "REC-54e55dd7",
+      "credentialHash": "1cb75be6db6681db2f44b16e60b96ffb143db0ba6f278b63f7426abfebd12880",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "previousHash": "4516e2bba3e3d3bcca5939f5659ad2d2f8975b2d457e6dbd67890af5e3da6d93",
+      "blockHash": "bdfc992b12c9026c1825b8a41be69dc045ecde74db0c3d3f6ed0e5b4a44fbfe1"
+    },
+    {
+      "index": 2,
+      "recordId": "REC-63e8c053",
+      "credentialHash": "08dc2ac6ad5db15b1350ea96a129c0600b818c2e041bb3977353415d6a35c27b",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "previousHash": "bdfc992b12c9026c1825b8a41be69dc045ecde74db0c3d3f6ed0e5b4a44fbfe1",
+      "blockHash": "83ea98e33663edccbfd3ea00e805c3cf8baf89da2c403d3f085a308f83d55711"
+    },
+    {
+      "index": 3,
+      "recordId": "REC-8c910f11",
+      "credentialHash": "5aaf9031182f84b8e2e9fa26a859df49f906b545521927e06ae8e7069ac2ca30",
+      "issuedAt": "2026-04-15T13:13:19.706Z",
+      "previousHash": "83ea98e33663edccbfd3ea00e805c3cf8baf89da2c403d3f085a308f83d55711",
+      "blockHash": "ebe5f7b54d225bd89964a269f248795393974e00f3b6fc51bae8aab5515d8f37"
+    }
+  ]
+}
